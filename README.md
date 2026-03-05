@@ -45,6 +45,10 @@ A minimal orchestration layer that captures screen state, feeds it to the model,
 
 NVIDIA said it directly in the paper, "*rather than exploring variants in agentic design, we focus on scaling underlying model capabilities through targeted supervised fine-tuning*."
 
+As seen below, I also built a Gradio demo that visualises the full agent loop with governance guardrails.
+
+![Gradio Demo](images/gradio-demo.png)
+
 ---
 
 ## CLI as the path to AI Autonomy
@@ -126,14 +130,6 @@ No specialised tools. No elaborate pipelines. Just a `tmux` session, a model, an
 Terminus 2 sends model-determined keystrokes to the `tmux` session, giving the agent flexibility to use any available command-line tools.
 
 The `duration` values in the command objects tell Terminus 2 how long to wait before capturing the next screen state.
-
----
-
-## Gradio Demo
-
-![Gradio Demo](images/gradio-demo.png)
-
-I built a [Nemotron-Terminal Agent demo](https://github.com/cobusgreyling/cli-path-to-autonomy) in Gradio that visualises the full agent loop. It shows the structured JSON output, command execution blocks, governance allowlisting, and a step-by-step audit trace for every interaction.
 
 ---
 
